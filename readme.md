@@ -1,12 +1,24 @@
-FreshDeals: Blueberries
-In the browser to the right, you should see a site for buying groceries. The currently selected product is “Organic Blueberries”. If you landed on this page, you may have some questions.
+# Fresh Deals
 
-Can I buy anything besides blueberries?
+**FreshDeals** is an e-commerce website designed to offer a seamless shopping experience for various food items, including prepared meals, produce, baked goods, and meat & poultry.
 
-Is everything on this site organic or can I buy conventional produce?
+## Project Overview
 
-Does this site offer non-produce items?
+This project showcases the FreshDeals homepage, complete with a header, navigation, hero section, product previews, and a footer with additional links and information.
 
-By adding breadcrumbs to this site, you will be adding a UI element that hints to some of the questions above. By doing so, users will have a better feeling for what the site provides and the optional attributes of the product they are purchasing.
+## Features
 
-We are focused on the layout of this page and will be implementing the breadcrumbs via HTML and CSS. The links to the breadcrumbs will not function.
+- **Header Section:**
+  - Logo with a link to the homepage.
+  - Search bar for finding items.
+  - Cart button linking to the shopping cart.
+- **Navigation Bar:**
+  - Links to Today's Deals, Bestsellers, About Us, Sell, and Help pages.
+- **Hero Section:**
+  - Highlighting unique combinations and encouraging customers to explore new deals.
+- **Products Preview Section:**
+  - Categories of products with images and descriptions.
+  - Recently viewed products with images, descriptions, and prices.
+- **Footer Section:**
+- Additional links for getting to know the company, making money with FreshDeals, and getting help.
+- Company logo and structured links for various sections.

@@ -1,29 +1,160 @@
-.breadcrumb{
-    padding: 7px;
-    margin-left: auto;
-    margin-right: auto;
+.hero {
+  width: 100%;
+  height: 21.75rem;
+  padding-left: 10rem;
+  background-image: url('./assets/blueberry-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.image-container img {
+  width: 100%;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.svg {
+  background-color: green;
+  padding: 5%;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input {
+  width: 100%;
+}
+
+.button {
+  background-color: green;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blueberry {
+  background-image: url('./assets/blueberry-hero.png');
+}
+
+.hero {
+  width: 100%;
+  padding: 0;
+}
+
+.hero h2 {
+  padding-top: 10rem;
+  font-family: 'PT Serif', serif;
+  font-size: 2.25rem;
+}
+
+.hero p {
+  width: 24.125rem;
+  line-height: 1.5;
+}
+
+.products {
+  padding: 0 5rem 6rem 5rem;
+}
+
+.products h2 {
+  margin-top: 2rem;
+  font-size: 1.625rem;
+}
+
+.landing .product-list {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.categories h3 {
+  margin-bottom: 0;
+}
+
+.breadcrumb {
+  display: inline;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  gap: 20px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+footer {
+  width: 100%;
+}
+
+footer img {
+  width: 100%;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  
-  .breadcrumb > li{
-    display: inline;
+}
+
+
+@media only screen and (max-width: 760px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .breadcrumb li.location+li.location::before{
-    content: "> ";
+}
+
+@media only screen and (max-width: 565px) {
+  .hero {
+    padding-left: 0;
+    text-align: center;
   }
-  .breadcrumb li.location a:hover{
-    color: lightblue;
-    text-decoration: underline;
+
+  .hero h2 {
+    padding-top: 7rem;
   }
-  .breadcumb li.attribute a{
-    color: pink;
-    margin-left: 10px;
+
+  .hero p {
+    width: 90%;
+    margin: auto;
   }
-  .breadcrumb li.attribute::after{
-    content: "*";
-    vertical-align: super;
-    color: pink;
+}
+
+@media only screen and (max-width: 470px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
   }
-  .breadcumb li.attribute a:hover{
-    color: green;
-  }
+}

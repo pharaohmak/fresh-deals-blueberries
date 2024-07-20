@@ -2,14 +2,8 @@
 <html>
 <head>
   <title>FreshDeals</title>
-  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="resources/css/base.css">
-  <link rel="stylesheet" type="text/css" href="resources/css/index.css">
-  <link rel="stylesheet" type="text/css" href="resources/css/breadcrumb.css">
-  <link rel="stylesheet" type="text/css" href="resources/css/styled-breadcrumb.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Serif:700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 <body>
   <div class="container">
@@ -18,55 +12,142 @@
 
     <header>
       <div class="image-container">
-        <a href="index.html"><img src="https://content.codecademy.com/courses/ui-breadcrumbs/logo.svg"></a>
+        <a href="index.html"><img src="./assets/logo.svg"></a>
       </div>
       <div class="search-bar">
         <input type="text" name="search" placeholder="Search for items">
-        <a href="" class="button"><img src="https://content.codecademy.com/courses/ui-breadcrumbs/search.svg"></a>
+        <a href="" class="button"><img class="svg" src="./assets/search.svg"></a>
       </div>
-      <a href="" class="button cart">Cart <img src="https://content.codecademy.com/courses/ui-breadcrumbs/cart.svg"></a>
+      <a href="" class="button cart" style="color: white; align-items: center;">Cart <img src="./assets/cart.svg"></a>
     </header>
-<ul class="breadcrumb">
-  <li class="location"><a href="#">Shop</a></li>
-  <li class="location"><a href="#">Groceries</a></li>
-  <li class="location"><a href="#">Blueberries</a></li>
-  <li class="attribute"><a href="#">Organic</a></li>
-</ul>
+    <nav>
+      <a href="deals.html">Today's Deals</a>
+      <a href="bestsellers.html">Bestsellers</a>
+      <a href="about.html">About Us</a>
+      <a href="sell.html">Sell</a>
+      <a href="#">Help</a>
+    </nav>
+    
     <!-- Hero Section -->
 
     <div id="main" class="landing">
-      <div class="blueberry hero">
-        <h2>Organic Blueberries - $3.99/each</h2>
-        <p>These blueberries are grown at a sustainable farm in the pacific northwest.</p>
-        <p>This superfood is a great addition to any pancake or dessert.</p>
+      <div class="hero">
+        <h2>Sea Salt + Grapes</h2>
+        <p>This combination may seem like a terrible idea at first glance, but we here at FreshDeals promise it's anything but. As you explore today's freshest deals, don't stop yourself from trying something new!</p>
       </div>
 
+    <!-- Products Preview Section -->
+
+      <div class="products">
+
+        <!-- Product Categories -->
+
+        <h2>Shop by category</h2>
+        <div class="product-list categories">
+          <a href="#" class="product-item">
+            <div class="image-container">
+              <img src="https://t3.ftcdn.net/jpg/02/52/38/80/360_F_252388016_KjPnB9vglSCuUJAumCDNbmMzGdzPAucK.jpg">
+            </div>
+            <div class="description">
+              <h3>Prepared Meals</h3>
+            </div>
+          </a>
+          <a href="#" class="product-item">
+            <div class="image-container">
+              <img src="https://media.istockphoto.com/id/589415708/photo/fresh-fruits-and-vegetables.jpg?s=612x612&w=0&k=20&c=aBFGUU-98pnoht73co8r2TZIKF3MDtBBu9KSxtxK_C0=">
+            </div>
+            <div class="description">
+              <h3>Produce</h3>
+            </div>
+          </a>
+          <a href="#" class="product-item">
+            <div class="image-container">
+              <img src="https://media.istockphoto.com/id/139885298/photo/baked-goods.jpg?s=612x612&w=0&k=20&c=jCRsN7QOZ8Lh2SWP_uVy-2ydi1mF2jZzA-i44EilGNM=">
+            </div>
+            <div class="description">
+              <h3>Baked Goods</h3>
+            </div>
+          </a>
+          <a href="#" class="product-item">
+            <div class="image-container">
+              <img src="https://media.istockphoto.com/id/1212824120/photo/assortment-of-meat-and-seafood.jpg?s=612x612&w=0&k=20&c=U_wNgPDs2CeWuOPEj0Hts1btABGM3gL4ftjficNvJZM=">
+            </div>
+            <div class="description">
+              <h3>Meat & Poultry</h3>
+            </div>
+          </a>
+        </div>
+
+        <!-- Recently Viewed Products -->
+
+        <h2>Recently Viewed</h2>
+        <div class="product-list">
+          <a href="./blueberries.html" class="product-item">
+            <div class="image-container">
+              <img src="https://t3.ftcdn.net/jpg/00/71/11/16/360_F_71111602_2a2Mx9yMeJ5v3hRbGpn0mvE7CrQPLGIE.jpg">
+            </div>
+            <div class="description">
+              <h3>Organic Blueberries</h3>
+              <span class="price">$3.99/each</span>
+            </div>
+          </a>
+          <a href="#" class="product-item">
+            <div class="image-container">
+              <img src="https://media.istockphoto.com/id/161170090/photo/pancakes-with-berries-and-maple-syrup.jpg?s=612x612&w=0&k=20&c=8EctScsN7q5UmxeXPNBnYN1eFmJmgmp2bE0OIq_czwM=">
+            </div>
+            <div class="description">
+              <h3>Gluten-Free Pancakes</h3>
+              <span class="price">$7.89/each</span>
+            </div>
+          </a>
+          <a href="#" class="product-item">
+            <div class="image-container">
+              <img src="https://t4.ftcdn.net/jpg/03/23/38/93/360_F_323389350_8xTHl4LfTg0sfw7m0lZOfqR03TrqwWAu.jpg">
+            </div>
+            <div class="description">
+              <h3>Chicken Salad</h3>
+              <span class="price">$6.50/each</span>
+            </div>
+          </a>
+          <a href="#" class="product-item">
+            <div class="image-container">
+              <img src="https://cdn.pixabay.com/photo/2022/09/05/09/50/tomatoes-7433786_640.jpg">
+            </div>
+            <div class="description">
+              <h3>Vine Ripe Tomatoes</h3>
+              <span class="price">$2.99/each</span>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
 
     <footer>
-      <img src="https://content.codecademy.com/courses/ui-breadcrumbs/logo.svg">
-      <div class="links">
-        <h4>Get to know us</h4>
-        <a href="#">About us</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="#">Investor relations</a>
-        <a href="#">Link</a>
-      </div>
-      <div class="links">
-        <h4>Make money with us</h4>
-        <a href="sell.html">Sell on FreshDeals</a>
-        <a href="#">Become a vendor</a>
-        <a href="#">Fundraiser events</a>
-        <a href="#">Community outreach</a>
-      </div>
-      <div class="links">
-        <h4>Help</h4>
-        <a href="#">Contact us</a>
-        <a href="#">Conditions of use</a>
-        <a href="#">Report a problem</a>
-        <a href="#">Privacy Policy</a>
+      <img src="./assets/logo.svg">
+      <div class="links-container">
+        <div class="links">
+          <h4>Get to know us</h4>
+          <a href="#">About us</a>
+          <a href="jobs.html">Jobs</a>
+          <a href="#">Investor relations</a>
+          <a href="#">Link</a>
+        </div>
+        <div class="links">
+          <h4>Make money with us</h4>
+          <a href="sell.html">Sell on FreshDeals</a>
+          <a href="#">Become a vendor</a>
+          <a href="#">Fundraiser events</a>
+          <a href="#">Community outreach</a>
+        </div>
+        <div class="links">
+          <h4>Help</h4>
+          <a href="#">Contact us</a>
+          <a href="#">Conditions of use</a>
+          <a href="#">Report a problem</a>
+          <a href="#">Privacy Policy</a>
+        </div>
       </div>
     </footer>
   </div>
